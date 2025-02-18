@@ -9,19 +9,14 @@ public class Hw6_4 {
                 {"изучает", "язык", "программирования"},
                 {"java"},};
         int sum = 0;
-        for (String[] strings : array) {
-            String str1 = "";
-            for (String string : strings) {
-                str1+=string+"";
-            }
-            sum++;
-            for(int k=0; k<str1.length(); k++){
-                if (str1.charAt(k) == 'е'){
-                    sum--;
-                    break;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (!array[i][j].contains("е")) {
+                    sum++;
                 }
             }
         }
+
         System.out.println(sum);
     }
 }
