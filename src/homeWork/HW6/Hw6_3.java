@@ -4,9 +4,8 @@ public class Hw6_3 {
     public static void main(String[] args) {
         String s = "Посмотрите как Рите нравится ритм";
         String s1 = s.toLowerCase();
-        String s2 = "рит";
         for (int i = 0; i < s.length(); i++) {
-            if(s1.substring(i).startsWith(s2)) {
+            if(s1.substring(i).startsWith("рит")) {
                 System.out.print(i+ " ");
             }
         }
