@@ -9,7 +9,7 @@ public class ReversedWords {
         for(int i = words.length-1; i>=0; i--){
             s += words[i]+" ";
         }
-        return s;    //write your code here...
+        return s.trim();    //write your code here...
     }
 
 
